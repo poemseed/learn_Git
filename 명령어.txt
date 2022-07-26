@@ -1,0 +1,95 @@
+pwd 							: 현재 나의 디렉토리 경로
+
+cd 이동경로    					: 이동경로로 이동
+
+- cd ..							: 상위 폴더로 이동
+
+- ls							: 폴더 리스트를 조회
+
+- ls -al							: 숨김폴더를 포함한 전체 폴더 리스트 조회
+
+- clear							: 화면 깨끗하게 정리
+
+- mkdir 폴더이름					: 폴더생성
+
+- rm -rf 폴더이름					: 폴더삭제
+
+- vim 파일이름					: 해당 파일 편집 또는 파일이 없다면 파일생성
+ 	   i 	->  입력가능한 상태 (insert)
+ 	esc 	-> insert 상태 빠져나옴
+ 	:wq 	-> 저장 후 종료
+ 	:q	-> 종료
+ 	:q! 	-> 강제종료
+
+- rm -r 파일이름					: 파일삭제
+
+- cat 파일이름					: 파일 내용 확인
+
+- git init						: 현재 디렉토리를 git 저장소로 사용
+
+- git status						: git 프로젝트 폴더의 상태확인
+
+- git config --global user.name 닉네임
+- git config --global user.email 이메일		: 누구의 작업물인지 표시
+
+- git add 파일이름					: git에 대상파일 add
+
+- git commit -m '메세지내용'			: 작업물 커밋, 메세지내용은 커밋에 대한 내용을 간단히 메모
+
+- git commit -am '메세지내용'			: add와 commit을 한꺼번에 하기
+    ⚠ 최초로 add와 commit이 각각 이루어진 후에 사용가능
+
+- git commit --amend						: 가장 최근 커밋 메세지 수정
+    ⚠ push 하지 않은 상태일때
+- git log								: 커밋한 이력 확인
+
+- git log --reverse							: 커밋한 기록 반대로 보기
+
+- git log -p								: 로그에서 출력되는 버전간의 차이점 출력
+
+- git log id값								: id값 이후의 로그 이전의 로그 확인
+
+- git diff id값..id값							: 두 id값의 차이점 파악
+
+- git diff 								: 방금 수정된 기능에 대해 어떤 작업을 했는지 확인가능
+     ⚠ add하기 이전에만 확인가능 
+
+- git branch 브랜치이름						: 새로운 브랜치 만들기
+
+- git branch 								: 브랜치 리스트 조회
+    
+- git checkout 브랜치이름 					: 브랜치이름으로 대상변경
+
+- git log --branches --decorate					: 저장되어 있는 모든 브랜치의 로그 확인 가능
+- git log --branches --decorate --graph				: 브랜치 로그 앞에 그래프가 추가됌
+- git log --branches --decorate --graph --oneline 		: 브랜치 로그 앞 그래프가 한줄로 표현
+
+- git log master..브랜치이름 					: master에는 없고 다른 브랜치에는 있는 것 확인
+    	⚠ master은 기본적으로 생성되어 주어진다. 
+  	⚠ 여기서 '브랜치이름'은 자신이 앞서 만든 브랜치이름이라는 의미
+  	⚠ master와 브랜치이름은 위치변경이 가능
+
+- git log -p master..브랜치이름				: master에는 없고 다른 브랜치에는 있는 것을 상세히 확인 가능
+
+- git merge master						: 현재 브랜치를 master로 병합
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+github
+
+- git clone 저장소주소 저장하고싶은디렉토리이름	: 디렉토리에 소스코드 복사
+
+- ssh-keygen -t rsa -C "이메일"				: 키생성, 최초에 한번만 하면 됌				
+
+- git remote add origin 저장소주소			: origin이라는 이름의 저장소를 add, 보통 origin으로 이름선정
+
+- git remote -v						: 저장소 조회
+
+- git remote remove origin				: origin이라는 저장소 삭제
+
+-  git push origin master					: github 저장소에 push
+
+- git pull origin master					: github 저장소에 소스코드 당겨오기
+	
+
+

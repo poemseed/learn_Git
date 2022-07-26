@@ -1,0 +1,11 @@
+내 레파지토리에 파일 업로드하기
+	1. 내 깃헙계정에 레파지토리만들어놓고 SSH 주소 복사하기
+	2. cd						-> 명령어로 원하는 파일 위치까지 들어가기
+	3. git init					-> 저장소로 사용하기
+	4. git add 폴더이름				-> 원하는 파일 저장하기
+		git add *				-> 모든 파일 저장하기
+		git commit -m '메세지'		-> 커밋 메시지 남기기
+		git commit -am '메세지'		-> add와 commit 같이 하기
+	5. git remote add origin 저장소주소	-> origin이라는 이름의 저장소를 add하기
+	6. git remote -v				-> origin이라는 저장소가 잘 조회되는 지 확인
+	7. git push origin master			-> 깃허브에 푸쉬
